@@ -7,7 +7,7 @@ function App() {
   const [search, setSearch] = useState("");
 
   useEffect(()=>{
-    fetch(" https://countries-search-data-prod-812920491762.asia-south1.run.app/countries")
+    fetch("https://countries-search-data-prod-812920491762.asia-south1.run.app/countries")
     .then((response) => response.json())
     .then((data) => {
         setCountries(data);
@@ -34,7 +34,7 @@ function App() {
         <div key={i} className='c-card'>
           <img
             src={country.png}
-            alt={country.name}
+            alt={country.common}
             className='c-flag'
           />
           <p className='c-name'>{country.common}</p>
