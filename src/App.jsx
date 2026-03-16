@@ -16,6 +16,7 @@ function App() {
 },[]);
 
  const filteredCountries = countries.filter((country) =>
+    country?.common &&
     country.common.toLowerCase().includes(search.toLowerCase())
   );
 
@@ -31,13 +32,13 @@ function App() {
     </div>
     <div className="App">
       {filteredCountries.map((country, i) => (
-        <div key={i} className='c-card'>
+        <div key={i} className='countryCard'>
           <img
             src={country.png}
             alt={country.common}
-            className='c-flag'
+            className='flagImg'
           />
-          <p className='c-name'>{country.common}</p>
+          <p className='countryName'>{country.common}</p>
           </div>
       ))}
     </div>

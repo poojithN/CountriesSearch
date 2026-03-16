@@ -4,19 +4,19 @@
   gap: 40px;
 
 }
-.c-card{
+.countryCard{
   text-align: center;
   border: 1px solid#ddd;
   border-radius: 8px;
   padding: 10px;
 
 }
-.c-flag {
+.flagImg {
   width: 80px;
   height: 60px;
   border-radius: 4px;
 }
-.c-name{
+.countryName{
   font-size: 16px;
 
 }
